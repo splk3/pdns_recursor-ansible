@@ -1,0 +1,9 @@
+---
+
+- hosts: pdns-rec
+  vars_files:
+    - ../resources/vars/pdns-rec-common.yml
+    - ../resources/vars/pdns-rec-repo-master.yml
+    - ../resources/vars/pdns-rec-single-thread.yml
+  roles:
+    - { role: pdns_recursor-ansible }

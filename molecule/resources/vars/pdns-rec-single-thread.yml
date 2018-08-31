@@ -1,0 +1,11 @@
+---
+
+##
+# PowerDNS Recursor Configuration
+##
+
+pdns_rec_config:
+
+  # We need more mthreads to handle huge traffic load
+  threads: 1
+  max-mthreads: 512

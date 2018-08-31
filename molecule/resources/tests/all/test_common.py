@@ -43,6 +43,7 @@ def test_config(host):
         assert fc.user == 'root'
         assert fc.group == 'root'
         assert 'lua-config-file=' + fr.path in fc.content
+        assert 'threads=5' in fc.content
 
         assert fr.exists
         assert fr.user == 'root'
